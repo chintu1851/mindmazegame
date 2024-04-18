@@ -1,0 +1,269 @@
+body {
+    background-image: url(./assets/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+  
+  }
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.high-scores {
+    list-style-type: none;
+    padding: 0;
+}
+
+.high-scores li {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: large;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.high-scores li:last-child {
+    margin-bottom: 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .red {
+    width: 30%;
+  }
+  
+  .outer-box {
+    margin-top: -50px;
+    border: 12px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    height: 80%;
+    background: #BF493A;
+  }
+  
+  .inner-box {
+    /* display: flex; */
+    /* text-align: center;
+    flex-direction: column; */
+    /* align-items: center; */
+    border: 12px solid #000;
+    border-radius: 10px;
+    height: 80%;
+    background-color: #FAF5E5;
+    /* background-image: url(./assets/bg.png); */
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+  }
+  
+  /* .inner-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  } */
+  
+  .inner-box h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3.7vw;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  #avatar-button {
+    width: 150px;
+    height: 150px;
+    border: 12px solid #BF493A;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  #user-avatar {
+    border-radius: 50%;
+  }
+  
+  #myProgress {
+    position: absolute;
+    margin-top: 22%;
+    width: 40%;
+    border: solid black 5px;
+    border-radius: 30px;
+  }
+  
+  #myBar {
+    width: 5%;
+    height: 30px;
+    background-color: #BF493A;
+    border-radius: 30px;
+  }
+  
+  .score {
+    position: absolute;
+    background-color: #BF493A;
+    border-radius: 20px;
+    left: 85%;
+    top: 3%;
+    width: 100px;
+    height: 100px;
+    border: solid black 8px;
+  }
+  
+  .score-logo {
+    width: 90%;
+    height: 65%;
+    transform: translateX(5%) translateY(28%);
+  }
+  
+  #playerName {
+    width: 280px;
+    height: 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  #startGame {
+    margin-top: 2%;
+    width: 280px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #BF493A;
+    box-sizing: border-box;
+    border: 5px solid black;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.player-container {
+    display: flex;
+    width: 772px;
+    height: 80px;
+    background-color: #BF493A;
+    border-radius: 20px;
+    /* justify-content: space-between; */
+    position: relative;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.player-container span {
+    font-size: 40px;
+    font-family: Montserrat;
+    color: white;
+    margin: 35px;
+}
+
+.line-design {
+    border-right: solid white 4px;
+    padding-right: 18px;
+    padding-top: 16px;
+    padding-top: 16px;
+}
+
+.player-name {
+    text-align: left;
+    float: left;
+
+}
+
+.player-points {
+    position: absolute;
+    right: 0;
+}
+
+.medal {
+    
+}
+
+.player-name-2 {
+    padding-left: 40px;
+}
+
+/* h1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+} */
+
+#backbutton{
+  top: 5%;
+  left: 5%;
+  position: absolute;
+  padding: 15px 28px;
+  border-radius: 5px;
+  /* background: linear-gradient(135deg, #ff7e5f, #feb47b); */
+  background-color: #BF493A;
+  border: none;
+  font-weight: 700;
+  color: white;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#backbutton:hover {
+  /* background: linear-gradient(135deg, #feb47b, #ff7e5f); */
+  background-color: #851304;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#backbutton > a {
+color: white;
+font-style: normal;
+text-decoration: none;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.high-scores {
+    list-style-type: none;
+    padding: 0;
+}
+
+.high-scores li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.high-scores li:last-child {
+    margin-bottom: 0;
+}
+

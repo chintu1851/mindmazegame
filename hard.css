@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.hcarddisplay {
+    display: flex;
+    flex-direction: row;
+}
+
+.hcard {
+    background-color: #E44D38;
+    width: 6vw;
+    height:6vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.hcard h3 {
+    display: none;
+    color: white;
+}
+/* .card img{
+    display: none;
+    width: 70px;
+    height: 70px;
+} */
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#hscore {
+    color: #fff;
+}
+.htime{
+    padding-left: 25px;
+    color: #fff;
+}
+.hscore{
+    color: #fff;
+}
+#htime{
+    color: #fff;
+}
+.hscoretime{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 60% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    height: 58% !important;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    background: linear-gradient(150deg, #cf3b19, #d4503c) !important;
+}
+
+.popup h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.popup > h1{
+    color: #fff; 
+}
+
+.popup button {
+    padding: 8px 16px;
+    background-color: #31100e !important;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.popup button:hover {
+    background-color: #100101 !important;
+}
+.gameover {
+    display: none;
+    position: fixed;
+    top: 60% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    height: 58% !important;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    color: #fff;
+    background: linear-gradient(250deg, #cf3b19, #d4503c) !important;
+}
+
+.gameover h2 {
+    margin-bottom: 10px;
+}
+
+.gameover button {
+    padding: 8px 16px;
+    background-color: #31100e !important;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.gameover button:hover {
+    background-color: #100101 !important;
+}

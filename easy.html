@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="maindiv">
+            <div class="scoretime">
+                <div class="score-only">
+                    <h3 class="score-txt">Score</h3>
+                    <h3 id="score">0</h3>
+                </div>
+                <div class="time-only">
+                    <h3 class="class-txt">Time</h3>
+                    <h3 id="time"></h3>
+                </div>
+            </div>
+            <img class="top-img" src="./assets/easy.png" alt="easy">
+            <div class="outer-box easy-bgcolor">
+                <div class="inner-box">
+                    <!-- content start -->
+                    <div class="carddisplay">
+                        <button class="easy-button bt0">
+                            <div class="card green-card" id="card0">
+                                <h3 id="displaycard0">
+                                    <img class="card-pic" src="./assets/fruits/strawberry.png">
+                                    <br>
+                                    Strawberry
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt1">
+                            <div class="card green-card" id="card1">
+                                <h3 id="displaycard1">
+                                    <img class="card-pic" src="./assets/fruits/strawberry.png">
+                                    <br>
+                                    Strawberry
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt2">
+                            <div class="card green-card" id="card2">
+                                <h3 id="displaycard2">
+                                    <img class="card-pic" src="./assets/fruits/banana.png">
+                                    <br>
+                                    Banana
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt3">
+                            <div class="card green-card" id="card3">
+                                <h3 id="displaycard3">
+                                    <img class="card-pic" src="./assets/fruits/kiwi.png">
+                                    <br>
+                                    Kiwi
+                                </h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="carddisplay">
+                        <button class="easy-button bt4">
+                            <div class="card green-card" id="card4">
+                                <h3 id="displaycard4">
+                                    <img class="card-pic" src="./assets/fruits/pineapple.png">
+                                    <br>
+                                    Pineapple
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt5">
+                            <div class="card green-card" id="card5">
+                                <h3 id="displaycard5">
+                                    <img class="card-pic" src="./assets/fruits/banana.png">
+                                    <br>
+                                    Banana
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt6">
+                            <div class="card green-card" id="card6">
+                                <h3 id="displaycard6">
+                                    <img class="card-pic" src="./assets/fruits/apple.png">
+                                    <br>
+                                    Apple
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt7">
+                            <div class="card green-card" id="card7">
+                                <h3 id="displaycard7">
+                                    <img class="card-pic" src="./assets/fruits/kiwi.png">
+                                    <br>
+                                    Kiwi
+                                </h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="carddisplay">
+                        <button class="easy-button bt8">
+                            <div class="card green-card" id="card8">
+                                <h3 id="displaycard8">
+                                    <img class="card-pic" src="./assets/fruits/orange.png">
+                                    <br>
+                                    Orange
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt9">
+                            <div class="card green-card" id="card9">
+                                <h3 id="displaycard9">
+                                    <img class="card-pic" src="./assets/fruits/pineapple.png">
+                                    <br>
+                                    Pineapple
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt10">
+                            <div class="card green-card" id="card10">
+                                <h3 id="displaycard10">
+                                    <img class="card-pic" src="./assets/fruits/orange.png">
+                                    <br>
+                                    Orange
+                                </h3>
+                            </div>
+                        </button>
+                        <button class="easy-button bt11">
+                            <div class="card green-card" id="card11">
+                                <h3 id="displaycard11">
+                                    <img class="card-pic" src="./assets/fruits/apple.png">
+                                    <br>
+                                    Apple
+                                </h3>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- content end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="popup" id="popup">
+            <img class="result-trophy" src="./assets/golden-cups.png">
+            <h1>Congratulations!</h1>
+            <h2>You have Completed the Easy Level!</h2>
+            <h2>Your Score is<h2 id="easyscore"></h2>
+            </h2>
+            <button id="closeid">Close</button>
+        </div>
+        
+        <div class="gameover" id="gamefinish">
+            <h1>Gameover! Try Again</h1>
+            <button id="restart">Restart</button>
+        </div>
+    
+
+    
+<script src="main.js" async defer></script>
+
+</body>
+</html>

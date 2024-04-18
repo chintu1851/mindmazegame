@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.mcarddisplay {
+    display: flex;
+    flex-direction: row;
+}
+
+.mcard {
+    background-color: #FF8906;
+    width: 6vw;
+    height:6vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.mcard h3 {
+    display: none;
+    color: white;
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#mscore {
+    color: brown;
+}
+.mscoretime{
+    display: flex;
+    flex-direction: column;
+}
+.mtime{
+    padding-left: 25px;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+.popup button:hover {
+    background-color: #413024 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.gameover {
+    display: none;
+    position: fixed;
+    top: 57.5% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: linear-gradient(55deg, #fdc072, #d46f26) !important;
+    height: 60% !important;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.gameover h2 {
+    margin-bottom: 10px;
+}
+
+.gameover button {
+    padding: 8px 16px;
+    background-color: #7e4e27 !important;     
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.gameover button:hover {
+    background-color: #413024 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#easyscore {
+    margin: 15px 0 10px 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#mediumscore {
+    margin: 15px 0 10px 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#ehardscore {
+    margin: 15px 0 10px 0;
+    font-size: 70px;
+    font-weight: 700;
+}

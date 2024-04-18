@@ -1,0 +1,377 @@
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* new-easy page */
+    background-image: url(./assets/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.carddisplay {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card {
+    /* background-color: rgb(50, 74, 227); */
+    width: 6vw;
+    height: 6vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.green-card{
+    background: #52B64F;
+}
+
+.blue-card{
+    background-color: rgb(50, 74, 227);
+}
+
+
+
+/* .card-easy {
+    background: #52B64F;
+    width: 6vw;
+    height: 6vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+} */
+
+.card0 {
+    position: fixed;
+}
+
+.card1 {
+    position: fixed;
+}
+
+.card h3 {
+    display: none;
+    color: white;
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* height: 95vh; */
+    height: 80%;
+
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#score {
+    color: brown;
+    margin-right: 36px;
+}
+
+.scoretime, .mscoretime, .hscoretime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 10px;
+}
+
+.score-only, .time-only  {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.score-txt, .class-txt {
+    font-size: 25px;
+    margin:0;
+}
+
+#score, #mscore, #hscore {
+    font-size: 40px;
+    margin: 0;
+}
+
+#time, #mtime, #htime {
+    font-size: 40px;
+    margin: 0;
+}
+
+.score-only {
+    margin-right: 20px;
+}
+
+.time-only {
+    margin-left: 20px;
+}
+
+/* Add these styles to your existing style.css file */
+
+.popup {
+    display: none;   
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    height: 50%;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    /* background: linear-gradient(175deg, #a7d474, #316e34); */
+    background-color: #BF493A;
+    text-align: center;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    font-family: "Roboto", sans-serif;
+}
+
+.popup h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.popup h2 {
+    margin: 50px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #ff7043;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.popup button:hover {
+    background-color: #ff5722;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.gameover {
+    display: none;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: linear-gradient(210deg, #a7d474, #316e34);
+    height: 50%;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    text-align: center;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gameover h1 {
+    margin: 60px 0;
+}
+
+.gameover button {
+    padding: 12px 24px;
+    background-color: #ff7043;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 80px 0;
+}
+
+.gameover button:hover {
+    background-color: #ff5722;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* easy page */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-img {
+    width: 30%;
+}
+
+.scoretime h3 {
+    margin: 2px;
+}
+
+.outer-box {
+    margin-top: -50px;
+    border: 12px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    height: 80%;
+}
+.easy-bgcolor {
+    background: #52B64F;
+}
+.medium-bgcolor {
+    background: #FF8906;
+}
+.hard-bgcolor {
+    background: #E44D38;
+}
+
+.inner-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 12px solid #000;
+    border-radius: 10px;
+    background-color: #FAF5E5;
+    /* height: 100%; */
+    height: 72vh;
+
+}
+
+.card-pic {
+    height: 50%;
+    width: 50%;
+}
+
+/* Just testing out some designs */
+
+/* .test {   
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    height: 50%;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    background: linear-gradient(175deg, #a7d474, #316e34);
+    text-align: center;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    font-family: "Roboto", sans-serif;
+}
+
+.test > img {
+    margin: 10px 0px 10px 0;
+}
+
+.test > h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.test > h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+} */
+
+.popup > img {
+    margin: 10px 0px 10px 0;
+}
+
+.popup > h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.popup > h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+}
+
+.popup-score {
+    color: white;
+    font-size: 40px;
+}
+
+#easyscore {
+    margin: 15px 0 10px 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#mediumscore {
+    margin: 15px 0 10px 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#hardscore {
+    margin: 15px 0 10px 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#closeid {
+    margin-top: 15px;
+    width: 35%;
+    color: white;
+    background-color: #313639;
+    font-size: 30px;
+}
+
+.gameover > h1 {
+    font-size: 70px;
+    font-family: Montserrat;
+}
+
+#restart {
+    margin-top: 15px;
+    width: 35%;
+    color: white;
+    background-color: #313639;
+    font-size: 30px;
+}
