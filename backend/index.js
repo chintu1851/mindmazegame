@@ -12,7 +12,7 @@ app.use(express.json());
 mongoose.connect("mongodb+srv://chintandaxeshpatel:ZNEwFL1cklpV49Wl@cluster0.r1ze08e.mongodb.net/players");
 const dataSchema = new mongoose.Schema({
   name: String,
-  score: String,
+  score: Number,
 });
 
 const Data = mongoose.model("Data", dataSchema);
