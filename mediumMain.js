@@ -110,7 +110,7 @@ function mediumlevel() {
                 if (mediumscore === 40) {
                     countdown = countdown - 5;
                     clearInterval(countdownInterval);
-                    mediumfinalscore = (countdown * 4) + 60;
+                    mediumfinalscore = (countdown * 4) + 40;
                     localStorage.setItem("mediumscore", mediumfinalscore);
                     console.log("this is final score", mediumfinalscore);
                      document.getElementById("meduimscore").innerHTML = mediumfinalscore

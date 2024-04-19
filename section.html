@@ -1,177 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Select Level</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="section.css" />
-    
-  </head>
-
-  <body>
-    <div class="backbutton">
-      <button id="backbutton">
-        <a href="login.html">Back</a>
-      </button>
-    </div>
-    <div class="score">
-      <a href="./highscore.html"><img class="score-logo" src="./assets/score.png" alt="score logo"></a>
-    </div>
-    <div class="container-fluid">
-      <img class="red" src="./assets/red.png" alt="red" />
-
-      <!-- background-image -->
-      <!-- <img src="./assets/main2.png" alt="Background Image" class="background-image"> -->
-
-      <!-- high-score -->
-      <!-- <div class="score">
-          <button style="border: none;"><a href="highscore.html"><img class="score-logo" src="./assets/score.png" alt="score logo"></a></button>
-        </div> -->
-
-      <div class="outer-box">
-        <div class="inner-box">
-          <!-- title -->
-          <h1 class="login-title">Select Level</h1>
-
-          <div class="mainleveldiv levels">
-            <a href="easy.html" class="trophydisplay">
-              <button
-                id="easy"
-                value="easy"
-                onclick="checkLevel('easy')"
-                class="selectlevel"
-              >
-                <div class="level-container">
-                  <div class="level">
-                    <div id="easytrophy">
-                      <div class="trophyimage"><img src="trophy.png" /></div>
-                    </div>
-                    <!-- <i class="fa-solid fa-star fa-2x" style="color: #FFD43B;"></i> -->
-                    <h2 class="level-text">Easy</h2>
-                    <h3>12 Cards</h3>
-                  </div>
-                </div>
-              </button>
-            </a>
-
-            <a href="medium.html" class="trophydisplay">
-              <button
-                id="medium"
-                value="medium"
-                onclick="checkLevel('medium')"
-                class="selectlevel"
-              >
-                <div class="level-container">
-                  <div class="level">
-                    <div id="mediumtrophy">
-                      <div class="trophyimage">
-                        <img src="trophy.png" />
-                        <img src="trophy.png" />
-                      </div>
-                    </div>
-                    <h2 class="level-text">Medium</h2>
-                    <h3>16 Cards</h3>
-                  </div>
-                </div>
-              </button>
-            </a>
-            <a href="hard.html" class="trophydisplay">
-              <button
-                id="hard"
-                value="hard"
-                onclick="checkLevel('hard')"
-                class="selectlevel"
-              >
-                <div class="level-container">
-                  <div class="level">
-                    <div id="hardtrophy">
-                      <div class="trophyimage">
-                        <img src="trophy.png" />
-                        <img src="trophy.png" />
-                        <img src="trophy.png" />
-                      </div>
-                    </div>
-                    <h2 class="level-text">Hard</h2>
-                    <h3>20 Cards</h3>
-                  </div>
-                </div>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- JavaScript file link -->
-    <script src="section.js" async defer></script>
-  </body>
-</html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="section.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Level</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="section.css" />
+
 </head>
 
 <body>
-    <div class="backbutton">
-        <button id="backbutton">Back</button>
-    </div>
-    <div class="mainleveldiv">
+  <div class="backbutton">
+    <button id="backbutton" onclick="backbutton()">
+      Back
+    </button>
+  </div>
+  <div class="score">
+    <a href="./highscore.html"><img class="score-logo" src="./assets/score.png" alt="score logo"></a>
+  </div>
+  <div class="container-fluid">
+    <img class="red" src="./assets/red.png" alt="red" />
 
-        <button id="easy" value="easy" onclick="checkLevel('easy')" class="selectlevel">
-            <a href="easy.html" class="trophydisplay">
-                <div class="level-container">
-                    <div class="level"><span class="level-text">Easy</span></div>
-            </a>
-            <div id="easytrophy">
-                <div class="trophyimage"><img src="trophy.png"></div>
-            </div>
-        </button>
-        </a>
+    <div class="outer-box">
+      <div class="inner-box">
+        <!-- title -->
+        <h1 class="login-title">Select Level</h1>
 
-        <button id="medium" value="medium" onclick="checkLevel('medium')" class="selectlevel">
-            <a href="medium.html" class="trophydisplay">
-                <div class="level-container">
-                    <div class="level"><span class="level-text">Medium</span></div>
+        <div class="mainleveldiv levels">
+          <a href="easy.html" class="trophydisplay">
+            <button id="easy" value="easy" onclick="checkLevel('easy')" class="selectlevel">
+              <div class="level-container">
+                <div class="level">
+                  <div id="easytrophy">
+                    <div class="trophyimage"><img src="trophy.png" /></div>
+                  </div>
+                  <!-- <i class="fa-solid fa-star fa-2x" style="color: #FFD43B;"></i> -->
+                  <h2 class="level-text">Easy</h2>
+                  <h3>12 Cards</h3>
                 </div>
-            </a>
-            <div id="mediumtrophy">
-                <div class="trophyimage"><img src="trophy.png"></div>
-                <div class="trophyimage"><img src="trophy.png"></div>
-            </div>
-        </button>
-        </a>
+              </div>
+            </button>
+          </a>
 
-        <button id="hard" value="hard" onclick="checkLevel('hard')" class="selectlevel">
-            <a href="hard.html" class="trophydisplay">
-                <div class="level-container">
-                    <div class="level"><span class="level-text">Hard</span></div>
+          <a href="medium.html" class="trophydisplay">
+            <button id="medium" value="medium" onclick="checkLevel('medium')" class="selectlevel">
+              <div class="level-container">
+                <div class="level">
+                  <div id="mediumtrophy">
+                    <div class="trophyimage">
+                      <img src="trophy.png" />
+                      <img src="trophy.png" />
+                    </div>
+                  </div>
+                  <h2 class="level-text">Medium</h2>
+                  <h3>16 Cards</h3>
                 </div>
-            </a>
-            <div id="hardtrophy">
-                <div class="trophyimage"><img src="trophy.png"></div>
-                <div class="trophyimage"><img src="trophy.png"></div>
-                <div class="trophyimage"><img src="trophy.png"></div>
-            </div>
-        </button>
-        </a>
-    </div>
+              </div>
+            </button>
+          </a>
+          <a href="hard.html" class="trophydisplay">
+            <button id="hard" value="hard" onclick="checkLevel('hard')" class="selectlevel">
+              <div class="level-container">
+                <div class="level">
+                  <div id="hardtrophy">
+                    <div class="trophyimage">
+                      <img src="trophy.png" />
+                      <img src="trophy.png" />
+                      <img src="trophy.png" />
+                    </div>
+                  </div>
+                  <h2 class="level-text">Hard</h2>
+                  <h3>20 Cards</h3>
+                </div>
+              </div>
+            </button>
+          </a>
+        </div>
+        <div class="savepopup" id="savescores">
+          <h2>You want to save your score?</h2>
+          <button id="save" onclick="savescore()">
+            Save
+          </button>
+          <button id="no-save" onclick="nosave()">
+            No
+          </button>
+        </div>
 
-    <script src="section.js" async defer></script>
+        <div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Popup HTML -->
+  </div>
+  <!-- JavaScript file link -->
+  <script src="section.js" async defer></script>
 </body>
 
-</html> -->
+</html>

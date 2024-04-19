@@ -110,7 +110,7 @@ function hardlevel() {
                 if (hardscore === 50) {
                     countdown = countdown - 5;
                     clearInterval(countdownInterval);
-                    hardfinalscore = (countdown * 4) + 60;
+                    hardfinalscore = (countdown * 5) + 50;
                     localStorage.setItem("hardscore", hardfinalscore);
                     console.log("this is final score", hardfinalscore);
                      document.getElementById("hardscore").innerHTML = hardfinalscore

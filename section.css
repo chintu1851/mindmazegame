@@ -37,7 +37,6 @@ body {
   color: white;
 }
 
-
 .container {
     position: relative;
     height: 100vh;
@@ -454,3 +453,37 @@ body {
   box-sizing: border-box;
   border: 5px solid black;
 }
+.savepopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1bbcac;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#save,
+#no-save {
+  padding: 15px 28px;
+  border-radius: 5px;
+  background-color: #edeaea;
+  border: none;
+  font-weight: 700;
+  color: black;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px; /* Added margin for spacing between buttons */
+}
+
+#save:hover,
+#no-save:hover {
+  background-color: #ccc; /* Change color on hover */
+}
+

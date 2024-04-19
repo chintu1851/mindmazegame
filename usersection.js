@@ -6,3 +6,5 @@ function onNameSubmit(event) {
     localStorage.setItem("playername", playerName);
 
 }
+console.log("this is score",localStorage.getItem("finalscore"))
+console.log("this is score",localStorage.getItem("playername"))
