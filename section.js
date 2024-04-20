@@ -38,57 +38,6 @@ function backbutton() {
     console.log("this is name", localStorage.getItem("playername"))
 
 }
-// document.getElementById("backbutton").addEventListener('click', function () {
-
-//     if (easyscore || meduimscore || hardscore) {
-//         if (
-//             (easyscore !== null && meduimscore !== null && hardscore !== null) ||
-//             (easyscore !== null && meduimscore !== null) ||
-//             (meduimscore !== null && hardscore !== null) ||
-//             (easyscore !== null && hardscore !== null) ||
-//             (easyscore !== null && hardscore !== null && meduimscore === null) ||
-//             (easyscore !== null && meduimscore !== null && hardscore === null)
-//         ) {
-//             if (easyscore || meduimscore || hardscore == null) {
-//                 easyscore = easyscore === null ? 0 : easyscore;
-//                 meduimscore = meduimscore === null ? 0 : meduimscore;
-//                 hardscore = hardscore === null ? 0 : hardscore;
-//             }
-//             score = parseInt(easyscore) + parseInt(meduimscore) + parseInt(hardscore)
-//             window.location = "login.html"
-//             localStorage.setItem("finalscore", score)
-
-//         }
-//         else if (meduimscore) {
-//             score = meduimscore
-//             window.location = "login.html"
-//             localStorage.setItem("finalscore", score)
-
-//         }
-//         else if (hardscore) {
-//             score = hardscore
-//             window.location = "login.html"
-//             localStorage.setItem("finalscore", score)
-
-//         }
-//         else {
-//             score = easyscore
-//             window.location = "login.html"
-//             localStorage.setItem("finalscore", score)
-
-//         }
-//         postData()
-//         console.log("this is final score ", score)
-
-//     }
-//     else {
-//         score = 0
-//         localStorage.setItem("finalscore", score)
-//         window.location = "login.html"
-//     }
-
-
-// })
 
 async function postData() {
     // Wait for necessary data to be available
@@ -99,7 +48,7 @@ async function postData() {
 
     try {
         // Make POST request to server
-        const response = await fetch("http://localhost:8080/postdata", {
+        const response = await fetch("https://mindmaze.onrender.com/postdata", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
